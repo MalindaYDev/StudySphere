@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Community | StudySphere</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+StudySphere
+</div>
+
+<button id="menuToggle">
+☰
+</button>
+
+<ul id="navMenu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="planner.html">Planner</a></li>
+<li><a href="assignments.html">Assignments</a></li>
+<li><a href="wellness.html">Wellness</a></li>
+<li><a href="community.html" class="active">Community</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<button id="themeToggle">
+🌙
+</button>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+
+<section class="page-header">
+
+<h1>💬 Student Community</h1>
+
+<p>
+
+Share ideas, discuss learning experiences, and connect with students.
+
+</p>
+
+</section>
+
+
+
+<section class="community-card">
+
+
+<div id="app">
+
+
+<h2>
+
+Student Discussion Forum
+
+</h2>
+
+
+
+<input
+
+type="text"
+
+v-model="newComment"
+
+placeholder="Write your comment...">
+
+
+
+<button @click="addComment">
+
+Post Comment
+
+</button>
+
+
+
+<h2 class="comment-title">
+
+Community Posts
+
+</h2>
+
+
+
+<ul>
+
+<li v-for="(comment,index) in comments">
+
+<span>
+
+💬 {{ comment }}
+
+</span>
+
+<button @click="deleteComment(index)">
+
+Delete
+
+</button>
+
+</li>
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+
+© 2026 StudySphere | Smart Campus & Student Life Hub
+</p>
+
+</footer>
+
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

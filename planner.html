@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Planner | StudySphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+StudySphere
+</div>
+
+<button id="menuToggle">
+☰
+</button>
+
+<ul id="navMenu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="planner.html" class="active">Planner</a></li>
+<li><a href="assignments.html">Assignments</a></li>
+<li><a href="wellness.html">Wellness</a></li>
+<li><a href="community.html">Community</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<button id="themeToggle">
+🌙
+</button>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="page-header">
+
+<h1>📚 Study Planner</h1>
+
+<p>
+
+Organize your daily study schedule and improve productivity.
+
+</p>
+
+</section>
+
+<section class="planner-card">
+
+<h2>Add a New Study Task</h2>
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter your study task">
+
+<button onclick="addTask()">
+
+Add Task
+
+</button>
+
+<h2>Today's Tasks</h2>
+
+<ul id="taskList">
+
+</ul>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+© 2026 StudySphere | Smart Campus & Student Life Hub
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

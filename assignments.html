@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment Tracker | StudySphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+StudySphere
+</div>
+
+<button id="menuToggle">
+☰
+</button>
+
+<ul id="navMenu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="planner.html">Planner</a></li>
+<li><a href="assignments.html" class="active">Assignments</a></li>
+<li><a href="wellness.html">Wellness</a></li>
+<li><a href="community.html">Community</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<button id="themeToggle">
+🌙
+</button>
+
+</nav>
+</header>
+
+
+
+<main>
+
+
+<section class="page-header">
+
+<h1>📝 Assignment Tracker</h1>
+
+<p>
+
+Manage your assignment deadlines and stay organized.
+
+</p>
+
+</section>
+
+
+
+<section class="assignment-card">
+
+
+<h2>Add New Assignment</h2>
+
+
+<div class="form-group">
+
+<input 
+type="text"
+id="assignmentInput"
+placeholder="Enter assignment name">
+
+
+<input 
+type="date"
+id="dueDate">
+
+
+<button onclick="addAssignment()">
+
+Add Assignment
+
+</button>
+
+
+</div>
+
+
+
+<h2 class="table-title">
+
+Upcoming Assignments
+
+</h2>
+
+
+
+<div class="table-container">
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Assignment</th>
+
+<th>Due Date</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="assignmentTable">
+
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+
+© 2026 StudySphere | Smart Campus & Student Life Hub
+
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

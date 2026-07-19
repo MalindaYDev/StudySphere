@@ -1,0 +1,1486 @@
+/* ==========================================
+   STUDYSPHERE - GLOBAL STYLES
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+    line-height:1.6;
+
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+
+main{
+    flex:1;
+}
+
+button,
+a,
+input,
+textarea,
+select,
+.feature-box,
+.planner-card,
+.assignment-card,
+.wellness-card,
+.community-card,
+.contact-card{
+
+    transition:all .3s ease;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+    background:#ffffff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 30px;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav ul li a{
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#2563eb;
+
+}
+
+/* ==========================================
+   ACTIVE NAVIGATION
+========================================== */
+
+nav ul li a.active{
+
+    color:#2563eb;
+
+    font-weight:700;
+
+    border-bottom:3px solid #2563eb;
+
+    padding-bottom:6px;
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:white;
+
+    color:#2563eb;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px) scale(1.03);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.features{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.features h2{
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+    color:#1e40af;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.feature-box{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.feature-box:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.feature-box h3{
+
+    margin-bottom:15px;
+
+    color:#2563eb;
+
+}
+
+.feature-box p{
+
+    color:#555;
+
+}
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.intro{
+
+    padding:80px 20px;
+
+}
+
+.intro-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.intro h2{
+
+    color:#2563eb;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.intro p{
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+   ANNOUNCEMENT
+========================================== */
+
+.announcement{
+
+    margin:80px auto;
+
+    max-width:1000px;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.announcement h2{
+
+    margin-bottom:20px;
+
+    font-size:32px;
+
+}
+
+.announcement p{
+
+    font-size:20px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:80px;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   PAGE HEADER
+========================================== */
+
+.page-header{
+
+    text-align:center;
+
+    padding:80px 20px 40px;
+
+}
+
+.page-header h1{
+
+    font-size:42px;
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.page-header p{
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+
+/*===============================
+  SHADOW TO CARDS
+  =============================*/
+
+  .planner-card:hover,
+.assignment-card:hover,
+.wellness-card:hover,
+.community-card:hover,
+.contact-card:hover{
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+   PLANNER CARD
+========================================== */
+
+.planner-card{
+
+    background:white;
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.planner-card h2{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.planner-card input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+    font-size:16px;
+
+}
+
+.planner-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.planner-card button:hover{
+
+   background:#1e40af;
+
+transform:translateY(-2px);
+
+transition:.3s;
+
+}
+
+.planner-card ul{
+
+    margin-top:25px;
+
+}
+
+.planner-card li{
+
+    background:#f5f7fb;
+
+    margin-bottom:12px;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.planner-card li button{
+
+    width:auto;
+
+    padding:8px 15px;
+
+    background:#ef4444;
+
+    font-size:14px;
+
+}
+
+.planner-card li button:hover{
+
+    background:#dc2626;
+
+}
+
+/* ==========================================
+   ASSIGNMENT TRACKER
+========================================== */
+
+
+.assignment-card{
+
+    background:white;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.assignment-card h2{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+}
+
+.assignment-card button:hover {
+
+    background:#1e40af;
+
+transform:translateY(-2px);
+
+transition:.3s;
+}
+
+
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.form-group input{
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+}
+
+
+
+.form-group button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.form-group button:hover{
+
+    background:#1e40af;
+
+}
+
+
+
+.table-title{
+
+    margin-top:45px;
+
+}
+
+
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+
+
+table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+    text-align:left;
+
+}
+
+
+
+table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+table tr:hover{
+
+    background:#f5f7fb;
+
+}
+
+/* ==========================================
+   WELLNESS PAGE
+========================================== */
+
+
+.wellness-card{
+
+    background:white;
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+
+
+.wellness-card label{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+
+
+.wellness-card select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.wellness-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.wellness-card button:hover{
+
+    background:#1e40af;
+
+transform:translateY(-2px);
+
+transition:.3s;
+
+}
+
+
+
+.advice-box{
+
+    margin-top:35px;
+
+    padding:25px;
+
+    background:#f5f7fb;
+
+    border-radius:15px;
+
+}
+
+
+
+.advice-box h2{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================================
+   COMMUNITY PAGE
+========================================== */
+
+
+.community-card{
+
+    background:white;
+
+    max-width:800px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.community-card h2{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.community-card input{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    margin-bottom:15px;
+
+    font-size:16px;
+
+}
+
+
+
+.community-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+.community-card button:hover{
+
+   background:#1e40af;
+
+transform:translateY(-2px);
+
+transition:.3s;
+}
+
+
+
+.comment-title{
+
+    margin-top:40px;
+
+}
+
+
+
+.community-card li{
+
+    background:#f5f7fb;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:12px;
+
+}
+
+/* ==========================================
+   CONTACT PAGE
+========================================== */
+
+
+.contact-card{
+
+    background:white;
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.contact-card h2{
+
+    text-align:center;
+
+    color:#2563eb;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.contact-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.contact-card label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+
+
+.contact-card input,
+
+.contact-card textarea{
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:16px;
+
+}
+
+
+
+.contact-card textarea{
+
+    resize:none;
+
+}
+
+
+
+.contact-card button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.contact-card button:hover{
+
+   background:#1e40af;
+
+transform:translateY(-2px);
+
+transition:.3s;
+
+}
+
+
+
+.support-box{
+
+    max-width:700px;
+
+    margin:40px auto 80px;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+
+
+.support-box h2{
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+
+body.dark-mode{
+
+    background:#111827;
+
+    color:#f9fafb;
+
+}
+
+
+body.dark-mode header{
+
+    background:#1f2937;
+
+}
+
+
+
+body.dark-mode nav a{
+
+    color:#f9fafb;
+
+}
+
+
+
+body.dark-mode .feature-box,
+
+body.dark-mode .intro-content,
+
+body.dark-mode .planner-card,
+
+body.dark-mode .assignment-card,
+
+body.dark-mode .wellness-card,
+
+body.dark-mode .community-card,
+
+body.dark-mode .contact-card{
+
+    background:#1f2937;
+
+    color:#f9fafb;
+
+}
+
+
+
+body.dark-mode input,
+
+body.dark-mode textarea,
+
+body.dark-mode select{
+
+    background:#374151;
+
+    color:white;
+
+    border-color:#6b7280;
+
+}
+
+
+
+body.dark-mode .planner-card li,
+
+body.dark-mode .community-card li{
+
+    background:#374151;
+
+}
+
+
+
+body.dark-mode .advice-box{
+
+    background:#374151;
+
+}
+
+
+
+#themeToggle{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 15px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+body.dark-mode nav ul li a.active{
+
+    color:#60a5fa;
+
+    border-bottom:3px solid #60a5fa;
+
+}
+
+/* ==========================================
+   MOBILE MENU BUTTON
+========================================== */
+
+#menuToggle{
+
+    display:none;
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:24px;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   COMMUNITY DELETE BUTTON
+========================================== */
+
+.community-card li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.community-card li button{
+
+    width:auto;
+
+    padding:8px 15px;
+
+    background:#ef4444;
+
+    border:none;
+
+    border-radius:8px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.community-card li button:hover{
+
+    background:#dc2626;
+
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width:992px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+}
+
+/*============================================
+  MOBILE LAYOUT
+=============================================*/  
+
+@media (max-width:768px){
+
+nav{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    gap:15px;
+
+}
+
+.logo{
+
+    text-align:center;
+
+}
+
+#menuToggle{
+
+    display:block;
+
+    align-self:flex-end;
+
+}
+
+#navMenu{
+
+    display:none;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:15px;
+
+}
+
+#navMenu.active{
+
+    display:flex;
+
+}
+
+.hero{
+
+    padding:50px 20px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.intro-content,
+.planner-card,
+.assignment-card,
+.wellness-card,
+.community-card,
+.contact-card{
+
+    width:95%;
+    padding:25px;
+
+}
+
+.page-header h1{
+
+    font-size:32px;
+
+}
+
+.page-header p{
+
+    font-size:16px;
+
+}
+
+table{
+
+    font-size:14px;
+
+}
+
+}
+
+
+/*====================================================
+  SMALL PHONES
+====================================================*/  
+
+@media (max-width:480px){
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    padding:12px 25px;
+
+}
+
+nav ul{
+
+    gap:10px;
+
+}
+
+#themeToggle{
+
+    padding:8px 12px;
+
+    font-size:16px;
+
+}
+
+}
+
+/* ==========================================
+   SMOOTH ANIMATIONS
+========================================== */
+
+.hero,
+.intro-content,
+.feature-box,
+.planner-card,
+.assignment-card,
+.wellness-card,
+.community-card,
+.contact-card,
+.announcement{
+
+    animation: fadeUp 0.8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
