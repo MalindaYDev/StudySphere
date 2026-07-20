@@ -16,6 +16,32 @@ This project was developed as a web application using HTML5, CSS3, and JavaScrip
 - 📞 Contact Page
 - 📱 Responsive Mobile-Friendly Design
 
+## 📸 Screenshots
+
+### 🏠 Home
+
+![Home](screenshots/home.png)
+
+### 📅 Study Planner
+
+![Planner](screenshots/planner.png)
+
+### ✅ Assignment Tracker
+
+![Assignments](screenshots/assignments.png)
+
+### 😊 Wellness
+
+![Wellness](screenshots/wellness.png)
+
+### 👥 Community
+
+![Community](screenshots/community.png)
+
+### 📞 Contact
+
+![Contact](screenshots/contact.png)
+
 ## Technologies Used
 
 - HTML5
